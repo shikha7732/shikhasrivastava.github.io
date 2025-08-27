@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Shikha Srivastava - WHS & Safety Consultant specializing in construction safety, ISO 45001 Lead Auditor with proven success in incident reduction">
+    <meta name="keywords" content="WHS Consultant, Safety Coordinator, ISO 45001, Construction Safety, Sydney, Return to Work, ICAM Investigation">
+    <meta name="author" content="Shikha Srivastava">
+    <meta property="og:title" content="Shikha Srivastava | WHS & Safety Expert">
+    <meta property="og:description" content="Experienced WHS & Risk Coordinator with proven success in driving safety programs and reducing incidents by 36%">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shikhasrivastava.com">
+    <meta name="theme-color" content="#4a00e0">
+    <title>Shikha Srivastava | WHS & Safety Expert | Construction Safety Specialist</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCCQEF9S2V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JCCQEF9S2V');
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #4a00e0;
+            --secondary: #8e2de2;
+            --accent: #ff6b6b;
+            --gold: #ffd700;
+            --dark: #2c3e50;
+            --light: #f7f9fc;
+            --text: #34495e;
+            --success: #00b894;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 6guardian);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section with Visual Elements */
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape1 {
+            width: 300px;
+            height: 300px;
+            background: white;
+            top: -150px;
+            right: -100px;
+            animation-delay: 0s;
+        }
+
+        .shape2 {
+            width: 200px;
+            height: 200px;
+            background: white;
+            bottom: -100px;
+            left: -50px;
+            animation-delay: 5s;
+        }
+
+        .shape3 {
+            width: 150px;
+            height: 150px;
+            background: white;
+            top: 50%;
+            left: 10%;
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 20px;
+            animation: slideInLeft 1s ease;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 25px;
+            color: white;
+            font-size: 14px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Hero Visual Card */
+        .hero-visual {
+            position: relative;
+        }
+
+        .stats-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: fadeInUp 1s ease 0.5s both;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 24px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            display: block;
+        }
+
+        .stat-label {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+
+        /* Current Role Section - Detailed */
+        .current-role {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .role-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .company-info {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .company-details h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .company-stats {
+            display: flex;
+            gap: 30px;
+        }
+
+        .company-stat {
+            text-align: center;
+        }
+
+        .company-stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .company-stat-label {
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        /* Responsibilities Grid */
+        .responsibilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .responsibility-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            border-left: 4px solid transparent;
+            border-image: linear-gradient(180deg, var(--primary), var(--secondary)) 1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .responsibility-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(74,0,224,0.1);
+        }
+
+        .resp-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .resp-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .resp-description {
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Achievement Highlight */
+        .achievement-banner {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .achievement-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .achievement-metrics {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .metric {
+            position: relative;
+        }
+
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Skills & Expertise */
+        .skills-section {
+            padding: 80px 0;
+            background: var(--light);
+        }
+
+        .skills-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .skill-category {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .category-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            padding: 8px 0;
+            color: var(--text);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .skill-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Certifications Timeline */
+        .certifications {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .cert-timeline {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+        }
+
+        .cert-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            transform: translateX(-50%);
+        }
+
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .cert-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .cert-content {
+            width: 45%;
+            background: var(--light);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .cert-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            top: 30px;
+        }
+
+        .cert-item:nth-child(odd) .cert-content::after {
+            right: -60px;
+        }
+
+        .cert-item:nth-child(even) .cert-content::after {
+            left: -60px;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .cert-institution {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 24px;
+        }
+
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer with visitor counter */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .visitor-counter {
+            display: inline-flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1), 0 0 20px rgba(74,0,224,0.2);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1), 0 0 30px rgba(142,45,226,0.3);
+            }
+        }
+
+        .counter-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .counter-icon {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .counter-label {
+            font-size: 12px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .counter-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-left: 5px;
+        }
+
+        .footer-divider {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            margin: 20px auto;
+            border-radius: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .visitor-counter {
+                gap: 20px;
+                padding: 12px 20px;
+            }
+            
+            .counter-item {
+                gap: 8px;
+            }
+            
+            .counter-value {
+                font-size: 18px;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px auto;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Mobile Navigation Overlay */
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .mobile-nav-overlay a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            font-weight: 500;
+            opacity: 0;
+            animation: slideInMobile 0.5s ease forwards;
+        }
+
+        .mobile-nav-overlay a:nth-child(1) { animation-delay: 0.1s; }
+        .mobile-nav-overlay a:nth-child(2) { animation-delay: 0.2s; }
+        .mobile-nav-overlay a:nth-child(3) { animation-delay: 0.3s; }
+        .mobile-nav-overlay a:nth-child(4) { animation-delay: 0.4s; }
+        .mobile-nav-overlay a:nth-child(5) { animation-delay: 0.5s; }
+
+        @keyframes slideInMobile {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive - Tablet */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .responsibilities-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            
+            .skills-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive - Mobile */
+        @media (max-width: 768px) {
+            /* Navigation */
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                padding: 15px 20px;
+            }
+            
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            /* Hero Section */
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-badges {
+                justify-content: center;
+            }
+            
+            .badge {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+                padding: 16px 30px;
+                font-size: 15px;
+            }
+            
+            .stats-card {
+                padding: 25px;
+            }
+            
+            .stats-grid {
+                gap: 20px;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+            
+            /* Sections */
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            /* Company Info */
+            .company-info {
+                flex-direction: column;
+                gap: 25px;
+                text-align: center;
+                padding: 25px;
+            }
+            
+            .company-details h3 {
+                font-size: 1.4rem;
+            }
+            
+            .company-stats {
+                justify-content: center;
+            }
+            
+            /* Responsibilities */
+            .responsibilities-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .responsibility-card {
+                padding: 20px;
+            }
+            
+            .responsibility-card:hover {
+                transform: translateX(5px);
+            }
+            
+            /* Achievement Banner */
+            .achievement-banner {
+                padding: 30px 20px;
+                border-radius: 15px;
+            }
+            
+            .achievement-title {
+                font-size: 1.2rem;
+            }
+            
+            .achievement-metrics {
+                gap: 30px;
+            }
+            
+            .metric-value {
+                font-size: 2.2rem;
+            }
+            
+            /* Skills */
+            .skills-categories {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .skill-category {
+                padding: 25px;
+            }
+            
+            /* Certifications Timeline */
+            .cert-timeline::before {
+                display: none;
+            }
+            
+            .cert-item {
+                flex-direction: column !important;
+                margin-bottom: 20px;
+            }
+            
+            .cert-content {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .cert-content::after {
+                display: none;
+            }
+            
+            /* Contact */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .contact-card {
+                padding: 25px;
+            }
+            
+            /* Floating Shapes */
+            .shape1 {
+                width: 150px;
+                height: 150px;
+                top: -75px;
+                right: -50px;
+            }
+            
+            .shape2 {
+                width: 100px;
+                height: 100px;
+                bottom: -50px;
+                left: -25px;
+            }
+            
+            .shape3 {
+                display: none;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .company-details h3 {
+                font-size: 1.2rem;
+            }
+            
+            .company-stat-value {
+                font-size: 1.2rem;
+            }
+            
+            .metric-value {
+                font-size: 1.8rem;
+            }
+            
+            .badge {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+            
+            .resp-title {
+                font-size: 1rem;
+            }
+            
+            .resp-description {
+                font-size: 13px;
+            }
+        }
+
+        /* Ensure minimum touch target size for mobile */
+        @media (max-width: 768px) {
+            a, button, .btn, .contact-card, .responsibility-card, .skill-category {
+                min-height: 44px;
+                -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+            }
+            
+            .contact-card a {
+                display: inline-block;
+                padding: 10px;
+                margin: -10px;
+            }
+        }
+
+        /* Optimize for iOS Safari */
+        @supports (-webkit-touch-callout: none) {
+            body {
+                -webkit-text-size-adjust: 100%;
+            }
+            
+            .btn, button {
+                -webkit-appearance: none;
+            }
+        }
+
+        /* Landscape mode adjustments */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero {
+                min-height: auto;
+                padding: 80px 0 40px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats-card {
+                padding: 20px;
+            }
+        }
+
+        /* Loading optimization */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-icon">SS</div>
+                <div class="logo-text">Shikha Srivastava</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#current-role">Current Role</a></li>
+                <li><a href="#skills">Expertise</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#current-role" class="mobile-nav-link">Current Role</a>
+        <a href="#skills" class="mobile-nav-link">Expertise</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Shikha Srivastava</h1>
+                    <p class="hero-subtitle">
+                        Experienced WHS & Risk Coordinator with proven success in driving mobile workforce safety programs, 
+                        field audits, and return-to-work coordination. Ready for NSW/ACT field travel.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge">🎓 ISO 45001 Lead Auditor</span>
+                        <span class="badge">🚗 Full Australian License</span>
+                        <span class="badge">📍 Sydney Based</span>
+                        <span class="badge">✅ Australian Citizen</span>
+                    </div>
+                    <div class="cta-group">
+                        <a href="#contact" class="btn btn-white">
+                            📧 Contact Me
+                        </a>
+                        <a href="#current-role" class="btn btn-outline">
+                            📋 View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="stats-card">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon">📉</div>
+                                <span class="stat-value">36%</span>
+                                <span class="stat-label">Incident Reduction</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">💰</div>
+                                <span class="stat-value">$80M</span>
+                                <span class="stat-label">Operations Value</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">🏗️</div>
+                                <span class="stat-value">4+ Years</span>
+                                <span class="stat-label">Construction WHS</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">🎯</div>
+                                <span class="stat-value">100%</span>
+                                <span class="stat-label">Compliance Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Role - Detailed -->
+    <section id="current-role" class="current-role">
+        <div class="section-header">
+            <h2 class="section-title">Current Role & Responsibilities</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="role-container">
+            <div class="company-info">
+                <div class="company-details">
+                    <h3>WHS & Injury Management Coordinator</h3>
+                    <p><strong>The Bathla Group</strong> | Sydney's Leading Property Developer</p>
+                    <p style="margin-top: 10px;">June 2021 - Present | Sydney, NSW</p>
+                </div>
+                <div class="company-stats">
+                    <div class="company-stat">
+                        <div class="company-stat-value">$80M</div>
+                        <div class="company-stat-label">Annual Value</div>
+                    </div>
+                    <div class="company-stat">
+                        <div class="company-stat-value">Multiple</div>
+                        <div class="company-stat-label">Active Sites</div>
+                    </div>
+                    <div class="company-stat">
+                        <div class="company-stat-value">500+</div>
+                        <div class="company-stat-label">Workers Managed</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 30px; color: var(--dark);">Key Responsibilities & Achievements</h3>
+            
+            <div class="responsibilities-grid">
+                <div class="responsibility-card">
+                    <div class="resp-icon">👥</div>
+                    <div class="resp-title">Leadership & Strategy</div>
+                    <div class="resp-description">
+                        Drive the integration of WHS into daily site operations by embedding ISO 45001-aligned safety systems. 
+                        Spearhead initiatives that foster a mature safety culture, reinforce personal accountability, 
+                        and influence positive safety behaviors across all departments.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">🏥</div>
+                    <div class="resp-title">Injury Management & RTW Programs</div>
+                    <div class="resp-description">
+                        Design, implement, and monitor both compensable and non-compensable injury management and 
+                        Return to Work (RTW) programs. Deliver tailored support to injured workers ensuring seamless 
+                        recovery and reintegration into the workforce.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">📚</div>
+                    <div class="resp-title">WHS Expertise & Coaching</div>
+                    <div class="resp-description">
+                        Provide specialist advice on WHS legislation (NSW), regulatory compliance, injury coordination, 
+                        and mental health. Mentor site teams and collaborate with department leads to ensure consistent 
+                        application of WHS protocols and best practices.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">🔍</div>
+                    <div class="resp-title">ICAM-Based Investigations</div>
+                    <div class="resp-description">
+                        Lead ICAM-based incident investigations and audits, ensuring timely action close-outs and 
+                        alignment with legal obligations. Review and update risk controls, registers, and safety 
+                        improvement plans to maintain high operational safety standards.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">💻</div>
+                    <div class="resp-title">System & Document Control</div>
+                    <div class="resp-description">
+                        Manage end-to-end WHS documentation including SWMS, Emergency Management Plans, and Business 
+                        Continuity Plans. Administer and optimize HammerTech WHS System for streamlined compliance 
+                        tracking and high-risk construction activities oversight.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">📊</div>
+                    <div class="resp-title">Reporting & Continuous Improvement</div>
+                    <div class="resp-description">
+                        Compile and present detailed safety and performance reports to senior management, highlighting 
+                        hazards, near-misses, and audit findings. Use insights to recommend continuous improvement 
+                        actions and strengthen organizational safety posture.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">🤝</div>
+                    <div class="resp-title">Stakeholder & Contractor Engagement</div>
+                    <div class="resp-description">
+                        Liaise effectively with internal teams, contractors, and external stakeholders to promote 
+                        safety alignment, manage submitted work orders, and drive safe work practices across 
+                        construction sites and support services.
+                    </div>
+                </div>
+
+                <div class="responsibility-card">
+                    <div class="resp-icon">🎓</div>
+                    <div class="resp-title">Training & Safety Culture</div>
+                    <div class="resp-description">
+                        Conduct site safety inspections, ergonomics assessments, toolbox talks, and safety training. 
+                        Champion WHS culture development and team accountability through ongoing leadership, 
+                        performance feedback, and coaching programs.
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-banner">
+                <h3 class="achievement-title">Key Achievement at The Bathla Group</h3>
+                <div class="achievement-metrics">
+                    <div class="metric">
+                        <div class="metric-value">36%</div>
+                        <div class="metric-label">Reduction in Safety Incidents</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">1 Year</div>
+                        <div class="metric-label">Achievement Timeline</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">Strategic</div>
+                        <div class="metric-label">Communication Framework</div>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    This achievement was driven by refining how safety messaging is delivered and interpreted by site staff, 
+                    demonstrating exceptional leadership in safety culture transformation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2 class="section-title">Professional Skills & Expertise</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="skills-categories">
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">🛡️</div>
+                    <h3 class="category-title">Safety Management</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">Safety Promotion & Culture Development</li>
+                    <li class="skill-item">WHS Strategy & Compliance</li>
+                    <li class="skill-item">ISO 45001 Standards Implementation</li>
+                    <li class="skill-item">Compliance Oversight & Monitoring</li>
+                    <li class="skill-item">Emergency Preparedness & Response</li>
+                    <li class="skill-item">First Aid Coverage & Drills</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">🔍</div>
+                    <h3 class="category-title">Risk & Investigation</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">ICAM-Based Incident Investigation</li>
+                    <li class="skill-item">Root Cause Analysis</li>
+                    <li class="skill-item">Hazard Identification & Management</li>
+                    <li class="skill-item">Risk Assessment & Control Measures</li>
+                    <li class="skill-item">Workplace Inspections & Audits</li>
+                    <li class="skill-item">Contractor Safety Assessments</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">💼</div>
+                    <h3 class="category-title">Injury & RTW Management</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">Return-to-Work Coordination</li>
+                    <li class="skill-item">Rehabilitation Strategy Development</li>
+                    <li class="skill-item">Compensable Injury Management</li>
+                    <li class="skill-item">Medical Liaison & Support</li>
+                    <li class="skill-item">Functional Capacity Assessment</li>
+                    <li class="skill-item">Physical & Mental Wellbeing Support</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">💻</div>
+                    <h3 class="category-title">Technical & Systems</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">HammerTech WHS System</li>
+                    <li class="skill-item">MS Office Suite (Advanced)</li>
+                    <li class="skill-item">SWMS Documentation</li>
+                    <li class="skill-item">Emergency Management Plans</li>
+                    <li class="skill-item">Business Continuity Planning</li>
+                    <li class="skill-item">WHS Reporting & Analytics</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">👥</div>
+                    <h3 class="category-title">Leadership & Communication</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">Team Leadership & Mentoring</li>
+                    <li class="skill-item">Training Design & Delivery</li>
+                    <li class="skill-item">Toolbox Talks & Safety Inductions</li>
+                    <li class="skill-item">Stakeholder Management</li>
+                    <li class="skill-item">Strategic Communication</li>
+                    <li class="skill-item">Performance Feedback & Coaching</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <div class="category-icon">⚙️</div>
+                    <h3 class="category-title">Personal Attributes</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">Action-Oriented & Result-Focused</li>
+                    <li class="skill-item">High Stress Tolerance</li>
+                    <li class="skill-item">Self-Motivated & Independent</li>
+                    <li class="skill-item">Analytical & Innovative</li>
+                    <li class="skill-item">Quick Thinking & Problem Solving</li>
+                    <li class="skill-item">Strategic Planning & Execution</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Timeline -->
+    <section id="certifications" class="certifications">
+        <div class="section-header">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="cert-timeline">
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Certificate IV in Training and Assessment</h3>
+                    <p class="cert-institution">HBA Learning, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">ISO 45001 - Lead Auditor</h3>
+                    <p class="cert-institution">Occupational Health & Safety Management Systems | ATON, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Diploma - Work Health & Safety</h3>
+                    <p class="cert-institution">HBA Learning, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Return to Work Program</h3>
+                    <p class="cert-institution">SIRA, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Certificate IV - Work Health and Safety</h3>
+                    <p class="cert-institution">ASTC, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">First Aid, Basic Emergency Life Support & CPR</h3>
+                    <p class="cert-institution">CBD College, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Certificate IV - Business Administration</h3>
+                    <p class="cert-institution">TAFE, Mt Druitt, NSW</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-content">
+                    <h3 class="cert-title">Bachelor of Engineering</h3>
+                    <p class="cert-institution">Electrical and Electronics | JNCT, RGPV University, Bhopal, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title" style="color: white;">Let's Connect</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">
+                Ready to enhance your workplace safety culture and achieve zero-harm objectives
+            </p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:shikha7732@gmail.com">shikha7732@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+61458887155">+61 458 887 155</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>The Ponds, NSW 2769</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Website</h3>
+                    <p>www.shikhasrivastava.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Shikha Srivastava. All rights reserved. | WHS & Safety Excellence</p>
+            <div class="footer-divider"></div>
+            <div class="visitor-counter">
+                <div class="counter-item">
+                    <div class="counter-icon">👁️</div>
+                    <span class="counter-label">Total Visits:</span>
+                    <span class="counter-value" id="totalVisits">0</span>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">👤</div>
+                    <span class="counter-label">Unique Visitors:</span>
+                    <span class="counter-value" id="uniqueVisitors">0</span>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">📅</div>
+                    <span class="counter-label">Since:</span>
+                    <span class="counter-value">Aug 2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', function() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenuBtn.classList.add('active');
+                mobileNavOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenuBtn.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuBtn.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                isMenuOpen = false;
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 70; // Height of fixed navbar
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'white';
+                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = 'white';
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to elements
+        document.querySelectorAll('.responsibility-card, .skill-category, .cert-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Prevent animations on mobile for better performance
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('.shape').forEach(shape => {
+                shape.style.animation = 'none';
+            });
+        }
+
+        // Handle orientation change
+        window.addEventListener('orientationchange', function() {
+            setTimeout(function() {
+                window.scrollTo(0, window.scrollY);
+            }, 500);
+        });
+
+        // Visitor Counter
+        function initVisitorCounter() {
+            // Use a unique namespace for your website
+            const namespace = 'shikhasrivastava';
+            
+            // Track unique visitors using localStorage
+            const visitorKey = 'ss_unique_visitor';
+            const visitCountKey = 'ss_visit_count';
+            const lastVisitKey = 'ss_last_visit';
+            
+            // Check if this is a new visitor
+            const isNewVisitor = !localStorage.getItem(visitorKey);
+            if (isNewVisitor) {
+                localStorage.setItem(visitorKey, 'true');
+                localStorage.setItem(lastVisitKey, new Date().toISOString());
+            }
+            
+            // Increment visit count
+            let visitCount = parseInt(localStorage.getItem(visitCountKey) || '0');
+            visitCount++;
+            localStorage.setItem(visitCountKey, visitCount.toString());
+            
+            // Use CountAPI for total visits (free service)
+            // This will track total visits across all users
+            fetch('https://api.countapi.xyz/hit/shikhasrivastava.com/visits')
+                .then(response => response.json())
+                .then(data => {
+                    // Animate counter to the actual value
+                    animateCounter('totalVisits', 0, data.value, 2000);
+                })
+                .catch(() => {
+                    // Fallback to localStorage if API fails
+                    document.getElementById('totalVisits').textContent = visitCount;
+                });
+            
+            // Get unique visitors count (using another counter)
+            fetch('https://api.countapi.xyz/get/shikhasrivastava.com/unique')
+                .then(response => response.json())
+                .then(data => {
+                    let uniqueCount = data.value || 1;
+                    // If new visitor, increment unique counter
+                    if (isNewVisitor) {
+                        fetch('https://api.countapi.xyz/hit/shikhasrivastava.com/unique')
+                            .then(response => response.json())
+                            .then(data => {
+                                animateCounter('uniqueVisitors', 0, data.value, 2000);
+                            });
+                    } else {
+                        animateCounter('uniqueVisitors', 0, uniqueCount, 2000);
+                    }
+                })
+                .catch(() => {
+                    // Fallback
+                    document.getElementById('uniqueVisitors').textContent = '1';
+                });
+        }
+
+        // Animate counter numbers
+        function animateCounter(id, start, end, duration) {
+            const element = document.getElementById(id);
+            if (!element) return;
+            
+            let startTime = null;
+            
+            function animate(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                
+                element.textContent = Math.floor(progress * (end - start) + start).toLocaleString();
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    element.textContent = end.toLocaleString();
+                }
+            }
+            
+            requestAnimationFrame(animate);
+        }
+
+        // Initialize visitor counter when page loads
+        document.addEventListener('DOMContentLoaded', initVisitorCounter);
+
+        // Track page views with Google Analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: 'Portfolio Home',
+                page_location: window.location.href,
+                page_path: window.location.pathname
+            });
+        }
+    </script>
+</body>
+</html>
