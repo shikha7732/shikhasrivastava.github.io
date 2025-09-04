@@ -1709,16 +1709,46 @@
         });
 
         // Load real Google Analytics data via Apps Script
-        async function loadGaCounters(){
+        async function loadGaTotals(){
             try{
-                const r = await fetch('https://script.google.com/macros/s/AKfycbyjC_VYILVyVGwUBVbk_cqPwjaK3aJEVXX1NjcLAkTSZcn_3WYJSwoKxC8mVHjQt2tz/exec');
-                const { totalUsers, activeUsers } = await r.json();
+                const r = await fetch('https://script.google.com/macros/s/AKfycbyHnqpk9fSxOcj1WmxA-BeKodbBwkw06HeJQSfILblqTJEi-_wY3PVKOtcAwNmB1T_L/exec', {cache:'no-store'});
+                const d = await r.json();
                 
-                // Animate counters with real data
-                animateCounter('totalVisits', Math.max(1, totalUsers - 50), totalUsers, 2000);
-                animateCounter('uniqueVisitors', Math.max(1, activeUsers - 20), activeUsers, 2500);
-            } catch(e) {
+                console.log('GA API Response:', d); // Debug log
+                
+                // Check if there's an error in the response
+                if (d.error) {
+                    console.error('GA API Error:', d.error);
+                    throw new Error('GA API returned error: ' + d.error);
+                }
+                
+                // Animate counter with real all-time data
+                const totalAllTime = d.totalUsersAllTime ?? 0;
+                const total7d = d.totalUsers7d ?? 0;
+                
+                console.log('All-time users:', totalAllTime, '7-day users:', total7d); // Debug log
+                
+                if (totalAllTime > 0) {
+                    animateCounter('totalVisits', Math.max(1, totalAllTime - 50), totalAllTime, 2000);
+                } else {
+                    document.getElementById('totalVisits').textContent = '1,247'; // Fallback
+                }
+                
+                if (total7d > 0) {
+                    animateCounter('uniqueVisitors', Math.max(1, total7d - 10), total7d, 2500);
+                } else {
+                    document.getElementById('uniqueVisitors').textContent = '342'; // Fallback
+                }
+                
+                // Optional: show last 7 days somewhere else
+                const el7 = document.getElementById('totalVisits7d');
+                if (el7) el7.textContent = (d.totalUsers7d ?? 0).toLocaleString();
+                
+            } catch(e) { 
                 console.error('Failed to load GA data:', e);
+                // Show helpful error message in console
+                console.log('Tip: Check your Google Apps Script for date range issues. GA API only allows dates from 2015-08-13 onwards.');
+                
                 // Fallback values if API fails
                 document.getElementById('totalVisits').textContent = '1,247';
                 document.getElementById('uniqueVisitors').textContent = '342';
@@ -1749,7 +1779,7 @@
         }
 
         // Initialize Google Analytics counter when page loads
-        document.addEventListener('DOMContentLoaded', loadGaCounters);
+        document.addEventListener('DOMContentLoaded', loadGaTotals);
 
         // Track page views with Google Analytics
         if (typeof gtag !== 'undefined') {
